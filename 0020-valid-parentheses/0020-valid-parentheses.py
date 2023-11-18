@@ -4,7 +4,7 @@ class Solution:
         openSet = set(opens)
         stack = []
         for p in s:
-            if p in opens:
+            if p in openSet:
                 stack.append(p)
             else:
                 if len(stack) == 0:
